@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inicio - Conexia</title>
+  <link rel="stylesheet" href="../css/index.css">
+  
+</head>
+<body>
+
+  <!-- Navbar -->
+ <nav class="navbar">
+    <div class="logo">Conexia</div>
+    <div class="nav-links">
+      <ul class="nav-ul">
+        <li class="nav-li">
+          <a href="../index.html">Inicio</a>
+        </li>
+        <li class="nav-li">
+          <div class="dropdown">
+            <button class="dropdown-button">Evidencias ▾</button>
+              <div class="dropdown-content">
+                <a href="evidenciasLaura.html">juan josé hurtado</a>
+                <a href="evidenciasSantiago.html">Santiago Garcia</a>
+              </div>
+          </div>
+        </li>
+        <li class="nav-li">
+          <a href="nosotros.html">Nosotros</a>
+        </li>
+        <li class="nav-li">
+          <a href="lecciones.html">Lecciones De Vida</a>
+        </li>
+     
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- Header -->
+  <header id="inicio">
+    <h1>Conexia</h1>
+    <p>¿Quiénes somos?</p>
+  </header>
+
+  
+  <!-- Nosotros -->
+    <div class="grid-2x2">
+        <div class="grid-item">
+            <h1>
+                Juan José Hurtado
+            </h1>
+            <br>
+            <img src="c:\Users\juan josè\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\D8FA522F781A96A3999321DA05DFDE8C\Imagen de WhatsApp 2025-12-07 a las 18.45.49_d1379283.jpg" alt="" class="fotoNosotros">
+            <br>
+            <br>
+            <div class="div-bio">
+                <h3 class="bio">
+               Me llamo Juan José Hurtado tengo 18 años actualmente estoy estudiando en el sena, en la competencia de desarrollo de software, me gusta mucho la programación y el diseño web, me gusta mucho el deporto y pasar tiempo con mis amigos y familiares y pasar el tiempo jugandi video juegos .
+            </div>
+        </div>
+        <div class="grid-item">
+            <h1>
+                Santiago Garcia
+            </h1>
+            <br>
+            <img src="c:\Users\juan josè\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\EA3E4EBF79464BC783E063D7182BC3FD\Imagen de WhatsApp 2025-12-07 a las 18.25.29_c08097c9.jpg" alt="" class="fotoNosotros">
+            <br>
+            <br>
+            <div class="div-bio">
+                <h3 class="bio">
+                Me llamo Santiago García y soy una persona muy decidida y creadora, me gusta mucho el desarrollo de páginas web y también explorar areas académicas nuevas para seguir aprendiendo y tener un Proceso excelente.
+            </h3>
+            </div>
+        </div>
+    </div>
+
+  <section class="tematicas-container">
+  <h2 class="seccion-titulo">Elige a alguien para ver sus evidencias</h2>
+  <div class="tematicas-content">
+
+
+  <a href="evidenciasLaura.html">
+    <div class="tematica" style="background-image: url('../img/lauraFoto.png');">
+      <h3>Juan José Hurtado</h3>
+    </div>
+  </a>
+  
+  <a href="evidenciasSantiago.html">
+    <div class="tematica" style="background-image: url('../img/santiagoFoto.png');">
+      <h3>Santiago Garcia</h3>
+    </div>
+  </a>
+  </div>
+</section>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const button = document.querySelector(".dropdown-button");
+    const menu = document.querySelector(".dropdown-content");
+
+    button.addEventListener("click", function (e) {
+      e.stopPropagation(); // Evita que el clic se propague
+      menu.classList.toggle("show");
+    });
+
+    // Cierra el menú si se hace clic fuera
+    document.addEventListener("click", function () {
+      menu.classList.remove("show");
+    });
+  });
+</script>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 COMUNI-K. Todos los derechos reservados. Diseñado con 💙</p>
+  </footer>
+
+</body>
+</html>

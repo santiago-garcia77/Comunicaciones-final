@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inicio - Conexia</title>
+  <link rel="stylesheet" href="../css/index.css">
+  
+</head>
+<body>
+
+  <!-- Navbar -->
+ <nav class="navbar">
+    <div class="logo">Conexia</div>
+    <div class="nav-links">
+      <ul class="nav-ul">
+        <li class="nav-li">
+          <a href="../index.html">Inicio</a>
+        </li>
+        <li class="nav-li">
+          <div class="dropdown">
+            <button class="dropdown-button">Evidencias ▾</button>
+              <div class="dropdown-content">
+                <a href="evidenciasLaura.html">juan josé hurtado</a>
+                <a href="evidenciasSantiago.html">Santiago Garcia</a>
+              </div>
+          </div>
+        </li>
+        <li class="nav-li">
+          <a href="nosotros.html">Nosotros</a>
+        </li>
+        <li class="nav-li">
+          <a href="lecciones.html">Lecciones De Vida</a>
+        </li>
+     
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- Header -->
+  <header id="inicio">
+    <h1>Lecciones</h1>
+    <p>que nos deja la formación de comunicaciones</p>
+
+    
+  </header>
+
+
+
+<section class="tematicas-container">
+  <h2 class="seccion-titulo">Frases de reflexión</h2>
+  <div class="tematicas-content">
+
+       <div class="grid-2x2">
+        <div class="grid-item">
+          <h1>
+            Juan José Hurtado
+          </h1>
+          <h3> 
+            Frase:
+            "Comunicar es abrir una ventana a lo que somos y intentar que quienes nos rodean comprendan lo que hay dentro. "
+            <br>
+            <br>
+            Explicación:
+            Esta idea expresa que toda forma de comunicación —palabras, gestos, escritura o incluso el silencio— funciona como una manera de mostrar nuestra identidad, nuestros pensamientos y emociones. Al hacerlo, buscamos conectar con los demás y lograr que entiendan nuestro mundo interior..
+          </h3>
+        </div>
+        <div class="grid-item">
+          <h1>
+            Santiago Garcia
+          </h1>
+          <h3>
+            Frase:
+            "Comunicar, sin importar el medio, es tender un puente entre mi mundo y el tuyo."
+            <br>
+            <br>
+            <br>
+            Explicación:
+            La idea es mostrar que los tipos de comunicación no son simples técnicas, sino formas de acercar realidades distintas. Cada gesto, palabra o mensaje busca conectar lo que sentimos y pensamos con la experiencia del otro.
+          </h3>
+        </div>
+    </div>
+
+
+  </div>
+</section>
+
+ 
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const button = document.querySelector(".dropdown-button");
+    const menu = document.querySelector(".dropdown-content");
+
+    button.addEventListener("click", function (e) {
+      e.stopPropagation(); // Evita que el clic se propague
+      menu.classList.toggle("show");
+    });
+
+    // Cierra el menú si se hace clic fuera
+    document.addEventListener("click", function () {
+      menu.classList.remove("show");
+    });
+  });
+</script>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 COMUNI-K. Todos los derechos reservados. Diseñado con 💙</p>
+  </footer>
+
+</body>
+</html>
